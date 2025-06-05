@@ -27,7 +27,7 @@ const Player = () => {
 
     return (
         <div>
-            <video ref={videoRef} width="500">
+            <video ref={videoRef} className="screen">
                 <source src="hero-1.mp4" type="video/mp4" />
             </video>
         </div>
