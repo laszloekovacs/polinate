@@ -40,3 +40,51 @@
 .read-the-docs {
   color: #888;
 }
+
+.scrolling-text {
+  position: absolute;
+  white-space: nowrap;
+  font-size: 24px;
+  color: #f0c000;
+  width: 100%;
+  overflow: hidden;
+}
+
+.scrolling-text span {
+  display: inline-block;
+  animation: scroll-text 10s linear infinite;
+}
+
+@keyframes scroll-text {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.wrapper {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.marquee {
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: marquee 20s linear infinite;
+}
+
+.marquee p {
+  display: inline-block;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
