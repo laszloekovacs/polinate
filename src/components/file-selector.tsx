@@ -1,6 +1,17 @@
+import { z } from "zod"
 
 
 export default function FileSelector({ ref }: { ref: React.Ref<HTMLInputElement> }) {
+    // state when file is selected
+    /*
+        const fileSelectSchema = z.object({
+            current: z.instanceof(HTMLInputElement)
+        })
+    
+        const fileSelectRef = fileSelectSchema.parse(ref)
+    
+        console.log(fileSelectRef.current.files)
+    */
 
     return (
         <label className="file-selector-label">
