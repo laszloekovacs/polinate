@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+.container {
+  display: block;
+  max-width: 1024px;
+  margin-inline: auto;
+}
 
 .file-selector-label {
   position: relative;

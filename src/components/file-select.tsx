@@ -9,7 +9,7 @@ export default function FileSelector() {
 
             <div className="file-selector-content">
                 <div>
-                    <p>húzz ide egy videófile-t vagy kattints és válassz eggyet</p>
+                    <p>Drag and drop a video file or click and select</p>
                 </div>
             </div>
         </label>
