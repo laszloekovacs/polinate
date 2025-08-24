@@ -6,7 +6,12 @@ export default function FileSelector() {
 
 
     const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
-        console.log(ref.current?.files?.[0])
+        const file = ref.current?.files?.[0];
+        console.log(file);
+
+        if (file) {
+            console.log(URL.createObjectURL(file));
+        }
     }
 
 
